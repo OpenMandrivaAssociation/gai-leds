@@ -60,7 +60,7 @@ Icon=%{name}
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=X-MandrivaLinux-System-Monitoring
+Categories=X-MandrivaLinux-System-Monitoring;
 EOF
 
 %clean
