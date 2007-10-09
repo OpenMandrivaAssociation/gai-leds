@@ -3,7 +3,7 @@
 %define release %mkrel 5
 
 Name: %name
-Summary: GAI applet displaying the status of the keyboard leds.
+Summary: GAI applet displaying the status of the keyboard leds
 Version: %{version}
 Release: %{release}
 License: GPL
