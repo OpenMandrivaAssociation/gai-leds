@@ -14,7 +14,6 @@ Source10:   %{name}-16.png
 Source11:   %{name}-32.png
 Source12:   %{name}-48.png
 Patch: gai-album-0.6-rox-install.patch
-BuildRoot: %{_tmppath}/build-root-%{name}
 BuildRequires: libgai-devel >= 0.5.3
 
 %description
