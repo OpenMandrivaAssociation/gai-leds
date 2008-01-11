@@ -42,13 +42,6 @@ mv %buildroot%_prefix/lib/* %buildroot%_libdir/
 install -m644 %SOURCE10 -D %{buildroot}/%_miconsdir/%name.png
 install -m644 %SOURCE11 -D %{buildroot}/%_iconsdir/%name.png
 install -m644 %SOURCE12 -D %{buildroot}/%_liconsdir/%name.png
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > %{buildroot}/%{_menudir}/%{name} 
-?package(%name): command="%{_bindir}/%name" icon="%name.png" \
-                needs="X11" section="Applications/Monitoring" \
- title="Gai-leds" longtitle="Displays the status of the keyboard leds" \
- xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -77,7 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS COPYING README README.gai
 %{_bindir}/*
 %{_libdir}/bonobo/servers/GNOME_%{name}Applet.server
-%{_menudir}/%name
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_datadir}/pixmaps/*
 %_libdir/apps/*
