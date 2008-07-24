@@ -1,6 +1,6 @@
 %define name gai-leds
 %define version 0.6
-%define release %mkrel 5
+%define release %mkrel 7
 
 Name: %name
 Summary: GAI applet displaying the status of the keyboard leds
