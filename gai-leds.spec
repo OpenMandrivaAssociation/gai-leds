@@ -7,7 +7,7 @@ Summary: GAI applet displaying the status of the keyboard leds
 Version: %{version}
 Release: %{release}
 License: GPL
-Url: http://gai.sf.net
+Url: https://gai.sf.net
 Group: Monitoring
 Source: http://prdownloads.sourceforge.net/gai/%{name}-%{version}.tar.bz2
 Source10:   %{name}-16.png
