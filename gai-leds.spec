@@ -15,6 +15,11 @@ Source11:   %{name}-32.png
 Source12:   %{name}-48.png
 Patch: gai-album-0.6-rox-install.patch
 BuildRoot: %{_tmppath}/build-root-%{name}
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: libgai-devel >= 0.5.3
 
 %description
